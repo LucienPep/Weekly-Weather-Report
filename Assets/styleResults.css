@@ -12,30 +12,22 @@
 html {
     font-family: 'main',Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 50px 10%;
-    background-color: rgb(230, 255, 254);
-}
-
-body {
-    padding: 50px 0 100px 0;
-    border-radius: 20px;
-    background-color: white;
-    border-style: solid;
+    background-color: rgb(255, 255, 255);
 }
 
 h1, h2, h3, h4 {
     font-family: 'main',Arial, Helvetica, sans-serif;
     font-weight: bold;
-    padding: 20px 20px 0 20px;
     letter-spacing: 1px;
 }
 
 h2 {
     font-size: large;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 h3 {
+    padding: 20px;
     font-size: large;
 }
 
@@ -53,18 +45,40 @@ form {
 input {
     text-align: center;
     padding: 5px;
-    margin: 5px 40% 5px 40%;
+    margin: 5px 20% 5px 20%;
     border-color: black;
  }
 
 button {
     padding: 5px;
-    margin: 5px 40% 5px 40%;
+    margin: 5px 20% 5px 20%;
     background-color: rgb(184, 232, 248);
 }
 
-#break {
-    padding: 1px;
-    background-color: rgb(148, 148, 148);
-    margin: 50px 30%;
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom-style: solid;
+    
+    background-color: rgb(230, 255, 254);
+}
+
+#side {
+    width: 400px;
+    background-color: #eceaea;
+    position: fixed;
+    top: 61px;
+    overflow: auto;
+    margin: 10px;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+main {
+    padding: 10px;
+    margin: 71px 10px 10px 430px;
+    border-style: solid;
+    border-radius: 20px;
 }
