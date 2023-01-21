@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "main";
+    src: url(Fonts/intrepid.ttf);
+}
+
+html {
+    font-family: 'main',Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px 10%;
+    background-color: rgb(230, 255, 254);
+}
+
+body {
+    padding: 50px 0 500px 0;
+    border-radius: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'main',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 20px 20px 0 20px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: large;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: large;
+}
+
+.centre {
+    text-align: center;
+}
+
+form {
+    font-family: 'main',Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+input {
+    text-align: center;
+    padding: 5px;
+    margin: 5px 40% 5px 40%;
+    border-color: black;
+ }
+
+button {
+    padding: 5px;
+    margin: 5px 40% 5px 40%;
+    background-color: rgb(184, 232, 248);
+}
+
+#break {
+    padding: 1px;
+    background-color: rgb(148, 148, 148);
+    margin: 50px 250px;
+}
