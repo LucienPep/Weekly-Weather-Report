@@ -63,8 +63,28 @@ button {
     background-color: rgb(184, 232, 248);
 }
 
+button:hover {
+    background-color:rgb(132, 219, 248) ;
+}
+
+button:active {
+    background-color:rgb(255, 255, 255) ;
+}
+
 #break {
     padding: 1px;
     background-color: rgb(148, 148, 148);
     margin: 50px 30%;
+}
+
+#autofill div {
+    margin: 0 40% 0 40%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255); 
+    border: 1px solid rgb(148, 148, 148); 
 }

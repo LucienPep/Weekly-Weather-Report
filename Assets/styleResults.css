@@ -55,6 +55,14 @@ button {
     background-color: rgb(184, 232, 248);
 }
 
+button:hover {
+    background-color:rgb(132, 219, 248) ;
+}
+
+button:active {
+    background-color:rgb(255, 255, 255) ;
+}
+
 header {
     position: fixed;
     top: 0;
