@@ -62,12 +62,12 @@ function submitForm(city){
 
 function locationAssign1(city){
     localStorage.setItem(storeLength + 1 , city)
-    var resultsPage = './Results.html?q=' + city
+    var resultsPage = './results.html?q=' + city
     location.assign(resultsPage)
 }
 
 function locationAssign2(city){
-    var resultsPage = './Results.html?q=' + city
+    var resultsPage = './results.html?q=' + city
     location.assign(resultsPage)
 }
 
