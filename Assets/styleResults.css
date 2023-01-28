@@ -85,8 +85,71 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 71px 10px 10px 430px;
     border-style: solid;
     border-radius: 20px;
+    align-content: center;
 }
+
+main h2 {
+    padding-bottom: 0;
+}
+
+#mainArea {
+    border-style: solid;
+    border-radius: 20px;
+    width: 30%;
+    background-color: rgb(230, 255, 254);
+    align-self: center;
+}
+
+#mainArea figure {
+    padding: 0 0 5px 0;
+}
+
+main p {
+    padding-bottom: 15px;
+    font-weight: bold ;
+    letter-spacing: .5px;
+}
+
+#fiveDay {
+    width: 100%;
+    max-width: 800px ;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+#fiveDay div {
+    padding: 10px 15px 0 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(230, 255, 254);
+    margin: 10px 0 ;
+    justify-content: space-between;
+    text-align: center;
+    border-style: solid;
+    border-radius: 20px;
+    align-self: stretch;
+}
+
+#fiveDay div h4 {
+    padding-top: 12px;
+}
+
+figure {
+    padding-top: 8px;
+}
+
+#prevSearches button {
+    width: 50%;
+}
+
+
+
+

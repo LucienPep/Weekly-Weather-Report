@@ -88,3 +88,15 @@ button:active {
     background-color: rgb(255, 255, 255); 
     border: 1px solid rgb(148, 148, 148); 
 }
+
+#prevSearches {
+    display: flex;
+    flex-flow: column;
+    flex-direction: column-reverse;
+    
+}
+
+#prevSearches button {
+
+    margin: 5px 40% 5px 40%;
+}
