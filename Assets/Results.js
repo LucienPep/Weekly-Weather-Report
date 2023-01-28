@@ -18,7 +18,7 @@ async function cityID() {
 
 async function cityCoordinates(cityValue){
     console.log(cityValue)
-    var geoAPI = 'http://api.openweathermap.org/geo/1.0/direct?q=' + cityValue + '&limit=1&appid=d6e1171ad1f67f3bb738c55832ae9542'
+    var geoAPI = 'https://api.openweathermap.org/geo/1.0/direct?q=' + cityValue + '&limit=1&appid=d6e1171ad1f67f3bb738c55832ae9542'
     console.log(geoAPI)
 
 
@@ -46,7 +46,7 @@ async function cityCoordinates(cityValue){
 }
 
 async function searchAPI(){
-    var weatherAPI = 'http://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + long + '&units=metric&appid=b3c1efcd09381a0214b3577ec13e218b'
+    var weatherAPI = 'https://api.openweathermap.org/data/2.5/forecast?lat=' + lat + '&lon=' + long + '&units=metric&appid=b3c1efcd09381a0214b3577ec13e218b'
     console.log(weatherAPI)
 
     let response = await fetch(weatherAPI)
