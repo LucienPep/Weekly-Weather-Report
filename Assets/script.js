@@ -6,34 +6,12 @@ var pastButton = document.getElementsByClassName('pastButton')
 var searchInputArea = document.getElementById('searchInput')
 var city = searchInputArea.value
 
-//function Autofill(){
-//    var search = document.getElementById('searchInput')
-//
-//    search.onkeydown = function(){
-//        console.log('Banana')
-//        var citySearch = search.value
-//
-//        if(citySearch.length>2){
-//            var fillSpace = document.getElementById('autofill')
-//            var div = document.createElement("div")
-//            div.innerHTML = "banana"
-//            fillSpace.appendChild(div)
-//        }
-//
-//        var APIData = 'http://api.openweathermap.org/geo/1.0/direct?q=' + citySearch + '&limit=1&appid=b3c1efcd09381a0214b3577ec13e218b'
-//
-//        APIData.onload = function(){
-//            var call = JSON.parse(this.response)
-//            console.log(call)
-//        }
-//    }
-//}
-
+// gets city name from either local storage or input
 function citySelector(){
     var city = searchInputArea.value
     submitForm(city)
 }
-
+// Function to check for city value and check if value is already present in local storage
 function submitForm(city){
     event.preventDefault()
 
@@ -60,17 +38,20 @@ function submitForm(city){
     locationAssign1(city) 
 }  
 
+//function to assign to local storage and continue to next page with city value
 function locationAssign1(city){
     localStorage.setItem(storeLength + 1 , city)
     var resultsPage = './results.html?q=' + city
     location.assign(resultsPage)
 }
 
+//function to continue to next page with city value without setting local storage
 function locationAssign2(city){
     var resultsPage = './results.html?q=' + city
     location.assign(resultsPage)
 }
 
+//check for local storage elements and create buttons for each one present
 function previousSearchList(){
     storeLength = localStorage.length
     for (var i = 1; i <= storeLength; i++){
@@ -83,6 +64,7 @@ function previousSearchList(){
     }
 }
 
+//get value from button pressed from local storage and submit
 function previousSearchRequest(event){
     var requestedName = event.target
     city = requestedName.innerText
@@ -94,6 +76,7 @@ previousSearchList()
 
 searchForm.addEventListener('submit', citySelector)
 
+//if local storage contains any items listen for click on button
 var storeLength = localStorage.length
 if (storeLength > 0){
     for (var i = 0; i < storeLength; i++){
@@ -101,3 +84,6 @@ if (storeLength > 0){
     pastButton[i].addEventListener('click', previousSearchRequest)
     }
 }
+
+
+
